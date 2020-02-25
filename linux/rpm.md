@@ -42,3 +42,12 @@ The --whatprovides option will show what installed package provides a particular
 ```
 $ rpm -q --whatprovides libc.so.6
 ```
+
+To verify all packages on the system
+```
+rpm -Va
+```
+
+Verify specific package
+```
+rpm -V bash

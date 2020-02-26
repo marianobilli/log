@@ -13,6 +13,11 @@ rpm -Va
 Verify specific package
 ```
 rpm -V bash
+
+or 
+
+yum install yum-plugin-verify
+yum verify bash
 ```
 
 Which package did this file come from?

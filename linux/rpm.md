@@ -1,5 +1,10 @@
 A collection of commands to help troubleshooting package installation on RHEL/Centos
 
+The history of yum executed commands
+```
+$ yum history
+```
+
 Which version of a package is installed?
 ```
 $ rpm -q bash

@@ -1,4 +1,4 @@
-# Table: Process and Load Monitoring Utilities
+Table: Process and Load Monitoring Utilities
  ------------------------------------------------------------------------------------------
 | UTILITY  | PURPOSE                                                  | PACKAGE            |
 |----------|----------------------------------------------------------|--------------------|
@@ -13,7 +13,7 @@
 | strace   | Information about all system calls a process makes       | strace             |
  ------------------------------------------------------------------------------------------ 
 
-# Table: Memory Monitoring Utilities
+Table: Memory Monitoring Utilities
  -------------------------------------------------------------------------------------------------------
 | UTILITY  | PURPOSE                                                               | PACKAGE            |
 |----------|-----------------------------------------------------------------------|--------------------|

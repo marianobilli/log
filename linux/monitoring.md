@@ -1,4 +1,4 @@
-Table: Process and Load Monitoring Utilities
+## Table: Process and Load Monitoring Utilities
 | UTILITY  | PURPOSE                                                  | PACKAGE            |
 |----------|----------------------------------------------------------|--------------------|
 | top      | Process activity, dynamically updated                    | procps             |
@@ -12,7 +12,7 @@ Table: Process and Load Monitoring Utilities
 | strace   | Information about all system calls a process makes       | strace             |
 
 
-Table: Memory Monitoring Utilities
+## Table: Memory Monitoring Utilities
 | UTILITY  | PURPOSE                                                               | PACKAGE            |
 |----------|-----------------------------------------------------------------------|--------------------|
 | free     | Brief summary of memory usage                                         | procps             |
@@ -20,7 +20,7 @@ Table: Memory Monitoring Utilities
 | pmap     | Process memory map                                                    | procps    
 
 
-Table: I/O Monitoring Utilities
+## Table: I/O Monitoring Utilities
 | UTILITY  | PURPOSE                                                               | PACKAGE            |
 |----------|-----------------------------------------------------------------------|--------------------|
 | iostat   | CPU utilization and I/O statistics                                    | sysstat            |
@@ -28,7 +28,7 @@ Table: I/O Monitoring Utilities
 | vmstat   | Detailed virtual memory statistics and block I/O, dynamically updated | procps 
 
 
-Table: Network Monitoring Utilities
+## Table: Network Monitoring Utilities
 | UTILITY   | PURPOSE                                                  | PACKAGE   |
 |-----------|----------------------------------------------------------|-----------|
 | netstat   | Detailed networking statistics                           | netstat   |

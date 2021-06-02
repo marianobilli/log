@@ -11,5 +11,4 @@ kadmin.local -q 'listprincs'
 ```
 
 This is especially usefull in hadoop environments with ambari to avoid asking ambari to regenerate keytabs, as it also changes some configurations
-
 tags: `kerberos`, `hadoop`

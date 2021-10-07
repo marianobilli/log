@@ -17,6 +17,7 @@
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 ```
 
+# Tools
 ## Context and namespace switch
 More info -> https://github.com/ahmetb/kubectx
 

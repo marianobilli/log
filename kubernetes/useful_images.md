@@ -19,7 +19,7 @@ spec:
       labels:
         app: nettools
     spec:
-      serviceAccountName: vault-backup
+<!--       serviceAccountName: <if_needed> -->
       containers:
         - image: travelping/nettools:latest
           imagePullPolicy: Always
@@ -29,14 +29,17 @@ spec:
             - infinity
           name: nettools
           securityContext:
-            allowPrivilegeEscalation: false
             runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
             runAsUser: 10001
+            runAsGroup: 10001
           resources:
             requests:
               cpu: "100m"
               memory: "32Mi"
             limits:
-              cpu: "300m"
-              memory: "15Gi"
+              cpu: "1"
+              memory: "1Gi"
+              memory: "1Gi"
 ```

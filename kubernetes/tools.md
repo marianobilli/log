@@ -28,7 +28,7 @@ $ brew install kubectx
 # Remember to cofigure autocompletion
 ```
 
-### Usage
+### Use
 ```
 $ kubectx arn:aws:eks:eu-west-1:356003666994:cluster/sbx        # This will switch context to sbx clustervim .b
 $ kubens kube-system                                            # This will switch namespace to kube-system
@@ -41,15 +41,17 @@ More info -> https://github.com/johanhaleby/kubetail
 ```
 brew tap johanhaleby/kubetail && brew install kubetail
 ```
-### Usage
+### Use
 ```
 > kubectx
 ```
 
 ## to really list all object types
+### Installation
 ```
 kubectl krew install get-all
-
-# use
+```
+### Use
+```
 kubectl get-all -n <namespace>
 ```

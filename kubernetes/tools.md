@@ -30,7 +30,7 @@ $ brew install kubectx
 
 ### Use
 ```
-$ kubectx arn:aws:eks:eu-west-1:356003666994:cluster/sbx        # This will switch context to sbx clustervim .b
+$ kubectx arn:aws:eks:eu-west-1:<account>:cluster/sbx        # This will switch context to sbx clustervim .b
 $ kubens kube-system                                            # This will switch namespace to kube-system
 ```
 

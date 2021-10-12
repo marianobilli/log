@@ -55,3 +55,13 @@ kubectl krew install get-all
 ```
 kubectl get-all -n <namespace>
 ```
+
+## whoami
+### Installation
+```
+kubectl krew install whoami
+```
+### Use
+```
+kubectl whoami
+```

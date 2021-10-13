@@ -65,3 +65,13 @@ kubectl krew install whoami
 ```
 kubectl whoami
 ```
+
+## Access-matrix
+### Installation
+```
+kubectl krew install access-matrix
+```
+### Use
+```
+kubectl access-matrix -n <namespace> --as <user> 
+```

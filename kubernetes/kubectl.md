@@ -13,3 +13,8 @@ kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get
 ```
 kubectl scale --replicas=5 deployments/<deployment>
 ```
+
+### Custom output 
+```
+kubectl get pod -o custom-columns=NAME:.metadata.name,NodeSelector:.spec.nodeSelector
+```

@@ -20,3 +20,6 @@
 ## Terraform
 - [command line](terraform/cli.md)
 - [kubernetes](terraform/k8s.md)
+
+## VSCode
+- [Terminal setup](vscode/terminal.md)

@@ -16,3 +16,7 @@
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)
 - [volumes](kubernetes/volumes.md)
+
+## Terraform
+- [command line](terraform/cli.md)
+- [kubernetes](terraform/k8s.md)

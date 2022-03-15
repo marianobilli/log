@@ -17,5 +17,4 @@
 - [security](kubernetes/security.md)
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)
-- [useful images](kubernetes/useful_images.md)
 - [volumes](kubernetes/volumes.md)

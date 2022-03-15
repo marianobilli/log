@@ -1,20 +1,31 @@
-# Deployment from Cli
+## Deployment oneliner
 ```
-kubectl create deployment pingtest --image=amazon/aws-cli --replicas=1 -- sleep infinity
-```
-
-
-### Find all objects in a namespace
-```
-kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get -n <namespace>
+k create deployment awscli --image=amazon/aws-cli --replicas=1 -- sleep infinity
 ```
 
-### Scale replicas
+## Pod oneliner (with custom serivice account)
 ```
-kubectl scale --replicas=5 deployments/<deployment>
+kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"your-service-account"}}' --command -- <your-command>
 ```
 
-### Custom output 
+## really Get all objects in namespace
 ```
-kubectl get pod -o custom-columns=NAME:.metadata.name,NodeSelector:.spec.nodeSelector
+k get -n {namespace} $(k get-all -n {namespace} | grep -v 'NAME' | awk '{print $1}' | tr '/' ' ' | awk '{print $1}' | tr '\n' ',' | sed 's/.\{1\}$//')
+k api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get -n <namespace>
+k get-all -n <namespace> # Using Krew get-all plugin
+```
+
+## Expose service port locally
+```
+k port-forward service/redis 6379:6379 -n redis
+```
+
+## Scale replicas
+```
+k scale --replicas=5 deployments/<deployment>
+```
+
+## Custom output 
+```
+k get pod -o custom-columns=NAME:.metadata.name,NodeSelector:.spec.nodeSelector
 ```

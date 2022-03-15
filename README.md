@@ -8,7 +8,6 @@
 - [main](emr/emr.md)
 
 ## Kubernetes
-- [commands](kubernetes/commands.md)
 - [eks](kubernetes/eks.md)
 - [kubectl](kubernetes/kubectl.md)
 - [links](kubernetes/links.md)

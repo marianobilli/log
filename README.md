@@ -22,3 +22,4 @@
 
 ## VSCode
 - [Terminal setup](vscode/terminal.md)
+- [Project config](vscode/config.md)

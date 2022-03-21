@@ -13,7 +13,7 @@ settings.json
     "python.formatting.provider": "autopep8",
     "editor.formatOnSave": true,
     "python.autoComplete.extraPaths": [
-        "./utils/",
+        "./other-folder/",
         "./",
     ],
     "code-runner.executorMap": {
@@ -22,7 +22,7 @@ settings.json
     "code-runner.clearPreviousOutput": true,
     "code-runner.showExecutionMessage": false,
     "python.analysis.extraPaths": [
-        "./app/",
+        "./other-folder/",
         "./"
     ]
 }

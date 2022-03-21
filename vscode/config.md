@@ -20,6 +20,10 @@ settings.json
         "python": "$pythonPath -u $fullFileName",
     },
     "code-runner.clearPreviousOutput": true,
-    "code-runner.showExecutionMessage": false
+    "code-runner.showExecutionMessage": false,
+    "python.analysis.extraPaths": [
+        "./app/",
+        "./"
+    ]
 }
 ```

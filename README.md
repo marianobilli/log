@@ -1,11 +1,14 @@
 ## Ansible
 - [Ad hoc commands](ansible/ad_hoc.md)
 
+## AWS EMR
+- [main](emr/emr.md)
+
 ## Docker
 - [Useful tools](docker/tools.md)
 
-## AWS EMR
-- [main](emr/emr.md)
+## Helm
+- [Outdated Helm charts in kubernetes cluster](helm/outdated)
 
 ## Kubernetes
 - [eks](kubernetes/eks.md)

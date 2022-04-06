@@ -16,6 +16,13 @@ kubectl run aws-cl --image=amazon/aws-cli --namespace=default --overrides='{"spe
 kubectl exec -ti aws-cli -- aws sts get-caller-identity
 ```
 
+# Call appi from within pod
+```
+token=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+curl -v --insecure -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_PORT_443_TCP_PORT/api/v1/nodes
+```
+
+
 # Run as deployments
 ```
 ---

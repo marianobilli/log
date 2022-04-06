@@ -1,3 +1,5 @@
+# kube-state-metrics
+## Labels
 Labels should be configured
 https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md
 ```

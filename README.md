@@ -18,6 +18,8 @@
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)
 - [volumes](kubernetes/volumes.md)
+### kube-state-metrics
+- [add lables to metrics](kubernetes/kube-state-metrics/labels.md)
 
 ## Terraform
 - [command line](terraform/cli.md)

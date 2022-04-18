@@ -18,6 +18,8 @@
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)
 - [volumes](kubernetes/volumes.md)
+- [Python API](kubernetes/k8s_python_lib.md)
+
 ### kube-state-metrics
 - [add labels to metrics](kubernetes/kube-state-metrics/labels.md)
 

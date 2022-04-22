@@ -23,6 +23,10 @@
 ### kube-state-metrics
 - [add labels to metrics](kubernetes/kube-state-metrics/labels.md)
 
+## Mackbook setup
+- [Oh My ZSH](mac/zsh.md)
+- [Terminal recording](mac/terminal_recording.md)
+
 ## Terraform
 - [command line](terraform/cli.md)
 - [kubernetes](terraform/k8s.md)

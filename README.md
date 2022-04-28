@@ -6,6 +6,7 @@
 
 ## Docker
 - [Useful tools](docker/tools.md)
+- [Basic Dockerfile for Python](docker/dockerfile.md)
 
 ## Helm
 - [Outdated Helm charts in kubernetes cluster](helm/outdated)

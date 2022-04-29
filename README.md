@@ -31,6 +31,12 @@
 - [Oh My ZSH](mac/zsh.md)
 - [Terminal recording](mac/terminal_recording.md)
 
+## Python
+- [Arguments with argparse](python/arguments.md)
+- [logging](python/logging.md)
+- [http requests with retries](python/requests.py)
+- [terminal formatting with rich library](python/terminal_formatting.md)
+
 ## Terraform
 - [command line](terraform/cli.md)
 - [kubernetes](terraform/k8s.md)

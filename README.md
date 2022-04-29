@@ -36,6 +36,7 @@
 - [logging](python/logging.md)
 - [http requests with retries](python/requests.py)
 - [terminal formatting with rich library](python/terminal_formatting.md)
+- [TODO: dunder methods](https://www.geeksforgeeks.org/dunder-magic-methods-python/)
 
 ## Terraform
 - [command line](terraform/cli.md)

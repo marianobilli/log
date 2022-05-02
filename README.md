@@ -36,7 +36,7 @@
 - [logging](python/logging.md)
 - [http requests with retries](python/requests.py)
 - [terminal formatting with rich library](python/terminal_formatting.md)
-- [How to debug python in a conainer in kubernetes](python/debug_container.py)
+- [How to debug python in a conainer in kubernetes](python/debug_container.md)
 - [TODO: dunder methods](https://www.geeksforgeeks.org/dunder-magic-methods-python/)
 
 ## Terraform

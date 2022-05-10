@@ -39,6 +39,14 @@
 - [How to debug python in a conainer in kubernetes](python/debug_container.md)
 - [TODO: dunder methods](https://www.geeksforgeeks.org/dunder-magic-methods-python/)
 
+## Security/Pentesting
+- [Test endpoint accepted chipers](pentesting/ciphersuite.md)
+- [Dissasembly an application](pentesting/assembly.md)
+- [Create dictionary](pentesting/dictionary.md)
+- [Undo Hashes, unhash??](pentesting/hashes.md)
+- [Two methods to bruteforce http basic auth](pentesting/http-brute-force.md)
+- [Almost nothing on metasploit](pentesting/metasploit.md)
+
 ## Terraform
 - [command line](terraform/cli.md)
 - [kubernetes](terraform/k8s.md)

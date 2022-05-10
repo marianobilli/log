@@ -1,22 +1,26 @@
 # Useful images
 ```
 amazon/aws-cli                # AWS command line client
-travelping/nettools:latest    # Network tools such as nslookup, curl, telnet, ping, etc
+travelping/nettools:latest    # Network tools, this nsloolup did not worked with etc/resolv.conf
+jonlabelle/network-tools      # Network tools, this nsloolup worked with etc/resolv.conf but not dig
 ```
 
 # Run conatiner and command ad-hoc
 ## Just run one command
 ```
-kubectl run <pod-name> --image=<your_image>--namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"your-service-account"}}' --command -- <your-command>
+kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"your-service-account"}}' --command -- <your-command>
 ```
 
 ## Example
 ```
 kubectl run aws-cl --image=amazon/aws-cli --namespace=default --overrides='{"spec":{"serviceAccount":"default"}}' --command -- sleep infinity
+kubectl run nettools --image=jonlabelle/network-tools --namespace=default --overrides='{"spec":{"serviceAccount":"default"}}' --command -- sleep infinity
+kubectl run nettools --image=travelping/nettools --namespace=default --overrides='{"spec":{"serviceAccount":"default"}}' --command -- sleep infinity
+
 kubectl exec -ti aws-cli -- aws sts get-caller-identity
 ```
 
-# Call appi from within pod
+# Call api from within pod
 ```
 token=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
 curl -v --insecure -H "Authorization: Bearer $token" https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_PORT_443_TCP_PORT/api/v1/nodes

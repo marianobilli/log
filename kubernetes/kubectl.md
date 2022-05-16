@@ -8,6 +8,11 @@ k create deployment awscli --image=amazon/aws-cli --replicas=1 -- sleep infinity
 kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"your-service-account"}}' --command -- <your-command>
 ```
 
+## Run a job once from a cronjob definitin 
+```
+kubectl create job --from=cronjob/<cronhob> <job>
+```
+
 ## really Get all objects in namespace
 ```
 k get -n {namespace} $(k get-all -n {namespace} | grep -v 'NAME' | awk '{print $1}' | tr '/' ' ' | awk '{print $1}' | tr '\n' ',' | sed 's/.\{1\}$//')

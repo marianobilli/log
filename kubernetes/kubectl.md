@@ -8,6 +8,9 @@ k create deployment awscli --image=amazon/aws-cli --replicas=1 -- sleep infinity
 kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"your-service-account"}}' --command -- <your-command>
 ```
 
+## Pod oneliner (with node selector and taint toleration)
+kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"default","tolerations":[{"key":"dedicated", "operator":"Equal", "value":"<taint-value>"}], "nodeSelector":{"<label-name>":"<label-value>"}}}' --command -- sleep infinity
+
 ## Run a job once from a cronjob definitin 
 ```
 kubectl create job --from=cronjob/<cronhob> <job>

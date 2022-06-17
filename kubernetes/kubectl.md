@@ -9,7 +9,7 @@ kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{
 ```
 
 ## Pod oneliner (with node selector and taint toleration)
-kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"default","tolerations":[{"key":"dedicated", "operator":"Equal", "value":"<taint-value>"}], "nodeSelector":{"<label-name>":"<label-value>"}}}' --command -- sleep infinity
+kubectl run <pod-name> --image=<your_image> --namespace=<your-ns> --overrides='{"spec":{"serviceAccount":"default","tolerations":[{"key":"dedicated", "operator":"Equal", "value":"taint-value"}], "nodeSelector":{"label-name":"label-value"}}}' --command -- sleep infinity
 
 ## Run a job once from a cronjob definitin 
 ```

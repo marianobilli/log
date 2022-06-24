@@ -1,8 +1,9 @@
 ## Ansible
 - [Ad hoc commands](ansible/ad_hoc.md)
 
-## AWS EMR
-- [main](emr/emr.md)
+## AWS
+- [EMR](emr/emr.md)
+- [Cloudwatch filter json log streams](aws/cloudwatch/filters.md)
 
 ## Docker
 - [Useful tools](docker/tools.md)

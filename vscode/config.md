@@ -1,7 +1,7 @@
 settings.json
 ```
 {
-    "python.pythonPath": ".venv/bin/python3.9",
+    "python.pipenvPath": "venv/bin/python3",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "editor.quickSuggestions": {

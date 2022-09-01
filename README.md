@@ -12,6 +12,10 @@
 ## Helm
 - [Outdated Helm charts in kubernetes cluster](helm/outdated)
 
+## Jenkins
+- [Pipeline useful info](jenkins/pipeline_utils.md)
+- [Useful Plugins](jenkins/useful_plugins.md)
+
 ## Kubernetes
 - [eks](kubernetes/eks.md)
 - [kubectl](kubernetes/kubectl.md)

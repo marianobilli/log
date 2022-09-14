@@ -20,6 +20,7 @@
 - [eks](kubernetes/eks.md)
 - [kubectl](kubernetes/kubectl.md)
 - [links](kubernetes/links.md)
+- [usefull scripts](kubernetes/scripts.md)
 - [security](kubernetes/security.md)
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)

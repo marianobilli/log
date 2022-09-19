@@ -19,12 +19,12 @@ e => end of the word
 b => hop backwards by a word  
 
 ## Copy paste
-y => yank (copy)  
-yy => copy a line  
+y => yank (COPY)  
+yy => COPY a line  
 p => paste a copied line one line below (and clear the register)  
 P => paste a copied line one line above (and clear the register)  
-d => delete (and save in the register) 
-D => delete the rest of the line
+d + movement => CUT (and save in the register) 
+D + movement => CUT the rest of the line
 dd => delete a line (and save in the register)  
 
 ## Select
@@ -42,7 +42,8 @@ O => new line above and into insert mode
 ### delete & insert
 c => delete and go into insert mode (example cw: delete word and go into insert mode)
 C => delete from current position to the end and go insert mode
-cc or S => delete whole line and go into insert mode
+s => delete (number) characters and go into insert mode
+S => delete (number) lines and go into insert mode (properly indented)
 
 ## Find
 / => regex mode  
@@ -53,7 +54,7 @@ N => previous occurrence
 
 ### Find in line
 f+<character> => jump  on to the first occurence of that character  (F same but backwards)
-t+<character> => jump  before the first occurence of that character (F same but backwards)
+t+<character> => jump  before the first occurence of that character (T same but backwards)
 ; => next occurence of that find
 , => previous occurrence of that find
   

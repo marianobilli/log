@@ -32,6 +32,11 @@ k port-forward service/redis 6379:6379 -n redis
 ```
 k scale --replicas=5 deployments/<deployment>
 ```
+  
+### Scale a bunch of pods
+```
+k get pod -o custom-columns="NAME:.metadata.name,image:.spec.containers[0].image,namespace:metadata.namespace,deployment:metadata.labels.app" -A | grep workspace | awk '{print $4,$3}' | xargs -L 1 bash -c 'kubectl scale deployment $0 --replicas 0 -n $1'
+```
 
 ## Custom output 
 ```

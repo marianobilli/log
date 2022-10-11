@@ -22,6 +22,7 @@
 - [links](kubernetes/links.md)
 - [usefull scripts](kubernetes/scripts.md)
 - [security](kubernetes/security.md)
+- [tolerations and node selector](kubernetes/tolerations.md)
 - [tools](kubernetes/tools.md)
 - [troubleshooting](kubernetes/troubleshooting.md)
 - [volumes](kubernetes/volumes.md)

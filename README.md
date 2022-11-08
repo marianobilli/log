@@ -27,6 +27,7 @@
 - [troubleshooting](kubernetes/troubleshooting.md)
 - [volumes](kubernetes/volumes.md)
 - [Python API](kubernetes/k8s_python_lib.md)
+- [Things to follow up](kubernetes/tofollow.md)
 
 ### Mutating webhooks
 - [Inject Containers Webook Project](https://github.com/marianobilli/inject-cotainer-webook)

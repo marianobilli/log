@@ -3,6 +3,7 @@
 amazon/aws-cli                # AWS command line client
 travelping/nettools:latest    # Network tools, this nsloolup did not worked with etc/resolv.conf
 jonlabelle/network-tools      # Network tools, this nsloolup worked with etc/resolv.conf but not dig
+mirantis/gpu-example:cuda-10.2 # Check gpu drivers
 ```
 
 # Run conatiner and command ad-hoc

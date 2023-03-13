@@ -75,3 +75,10 @@ kubectl krew install access-matrix
 ```
 kubectl access-matrix -n <namespace> --as <user> 
 ```
+
+## ingress-nginx
+https://kubernetes.github.io/ingress-nginx/kubectl-plugin/
+### Installation
+```
+kubectl krew install ingress-nginx
+```

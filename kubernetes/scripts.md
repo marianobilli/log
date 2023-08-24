@@ -17,3 +17,28 @@ do
     done
 done
 ```
+
+# Patch ingress controllers 
+```
+#!/bin/bash
+echo "Reading namespaces..."
+for namespace in $(kubectl get ns | tail -n +2 | awk '{print $1}')
+# for namespace in "orvoc"
+do
+    echo "Reading ingresses of namespace $namespace"
+    for ingress in $(kubectl get ingress -n $namespace | tail -n +2 | awk '{print $1}')
+    # for ingress in "ffanitab-vockol"
+    do
+        project=$(kubectl get ingress -n $namespace $ingress -o json | jq '.metadata.annotations["nginx.ingress.kubernetes.io/auth-snippet"]' | grep -oE "Lab (\w+) default" | awk '{print $2}')
+        user=$(kubectl get ingress -n $namespace $ingress -o json | jq '.metadata.annotations["nginx.ingress.kubernetes.io/auth-snippet"]' | grep -oE 'Ldap-Allowed-Users \\\"(\w+)' | tr -d "\\" | tr -d '"' | awk '{print $2}')
+        echo "ingress $ingress, project $project, user $user"
+        if [[ -n $user && -n $project && $ingress == *-$project ]]; then
+            json_patch=$(sed "s/{PROJECT}/$project/g" patch.json | sed "s/{USER}/$user/g")
+            echo $json_patch >> patch_$user-$project.json
+            echo $json_patch
+            echo "Changing $ingress... with project $project and user $user"
+            kubectl patch ingress -n $namespace $ingress --type=json --patch-file patch_$user-$project.json
+        fi
+    done
+done
+```
